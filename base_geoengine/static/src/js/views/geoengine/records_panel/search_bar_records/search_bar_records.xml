@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<templates>
+    <t t-name="base_geoengine.SearchBarRecords" owl="1">
+        <div class="o_cp_searchview d-flex flex-grow-1" role="search">
+            <div
+                class="o_searchview align-self-center flex-grow-1"
+                role="search"
+            >
+                <div class="input-group">
+                    <span class="input-group-text" id="basic-addon1">
+                        <i class="fa fa-search" />
+                    </span>
+                    <input
+                        type="text"
+                        class="form-control"
+                        t-ref="searchComponent"
+                        placeholder="Search..."
+                        t-on-keyup="onInputKeyup"
+                    />
+                </div>
+            </div>
+        </div>
+    </t>
+</templates>
